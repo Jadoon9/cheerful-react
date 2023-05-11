@@ -20,9 +20,9 @@ const clientAccordianDetails2 = [
 
 const Client = ({ openModal, handleClose, handleShow, setSelectedClient }) => {
   return (
-    <div className="col-md-3" style={{ height: "90vh" }}>
-      <div className="d-flex justify-content-between align-items-center bg-white p-2">
-        <p>Client List</p>
+    <div className="col-md-3 client-list">
+      <div className="client-list-top d-flex justify-content-between align-items-center">
+        <h5 className="m-0">Client List</h5>
         <Button
           type="button"
           text="Assign a Journal"

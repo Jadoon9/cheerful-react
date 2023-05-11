@@ -7,7 +7,7 @@ import { GrNotes } from "react-icons/gr";
 import { MdNotifications, MdEmail } from "react-icons/md";
 import userImage from "../../assets/images/Ellipse 326.png";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import logo from "../../assets/images/cheer-logo.png";
 const navbarItems = [
   { id: 1, name: "Dashboard", icon: <RxDashboard />, link: "/" },
   { id: 2, name: "Appointments", icon: <IoVideocam />, link: "/" },
@@ -32,12 +32,25 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <div>
-      <nav className="navbar navbarr navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <p className="navbar-brand">Logo</p>
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+    <div className="header">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src={logo} alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
               {navbarItems.map((item) => {
                 return (
                   <NavbarItem
@@ -50,7 +63,7 @@ const Navbar = () => {
                 );
               })}
             </ul>
-            <div className="d-flex">
+            <div class="d-flex align-items-center my-2 my-lg-0 nav-right">
               <MdNotifications />
               <MdEmail />
               <div class="btn-group">

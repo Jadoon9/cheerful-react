@@ -11,7 +11,7 @@ const JournalPage = () => {
 
   console.log(selectedClient, "43343");
   return (
-    <>
+    <div className="main-container">
       <div class="row">
         {/* Coll 1 */}
         <Client
@@ -31,7 +31,7 @@ const JournalPage = () => {
 
         <JournalDetails />
       </div>
-    </>
+    </div>
   );
 };
 

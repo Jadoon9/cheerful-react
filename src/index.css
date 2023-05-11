@@ -1,36 +1,327 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap");
-
-.app {
-  background-color: #f6f6f6;
-  height: 100vh;
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
 }
-
-.navbarr {
-  background-color: #f2f2f2;
+body {
+  line-height: 1;
 }
-
-.journal_card_text_color {
-  color: "#1E5542";
+ol,
+ul {
+  list-style: none;
 }
-
-.journal_card_border {
-  border-radius: 16px;
+button.btn {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
 }
-
-.nav_active {
-  color: "#F4A417";
+button.btn:focus {
+  box-shadow: none;
 }
+.carrot-left {
+  width: 36px;
+  height: 36px;
 
-.bg_gray {
-  background-color: #e9edea;
+  background: #fafafa;
+  border-radius: 8px;
 }
-
-.accordian_text_color {
+.header {
+  padding-block: 5px;
+  height: 74px;
+  background: #fcfcfc;
+}
+.header .navbar-expand-sm .navbar-nav {
+  gap: 30px;
+}
+.header .nav-item .nav-link {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #afb1b0;
+}
+.header .nav-item .nav-link p {
+  margin: 0px;
+}
+.header .nav-right {
+  color: #afb1b0;
+  gap: 20px;
+}
+.header .nav-right .btn-group {
+  width: 80px;
+  height: 42px;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.04);
+  border-radius: 37px;
+}
+.header .nav-right .btn-group button {
+  padding: 0px;
+  text-align: left;
+}
+.dropdown-menu {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 10px;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 2em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.45em solid;
+  border-right: 0.45em solid transparent;
+  border-bottom: 0;
+  border-left: 0.45em solid transparent;
+}
+.main-container {
+  max-width: 100%;
+  display: block;
+  padding: 15px 3%;
+  margin: 0 auto;
+  height: calc(100vh - 75px);
+  overflow-y: auto;
+  background: #f6f6f6;
+}
+.client-list::-webkit-scrollbar {
+  width: 0px;
+}
+.main-container h5 {
   color: #1a3a5f;
-  font-weight: bold;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
 }
 
-.accordian_title_color {
+.main-container .client-list {
+  background: #ffffff;
+  border-radius: 12px 0px 0px 12px;
+  height: calc(100vh - 105px);
+  overflow-y: auto;
+}
+.main-container .client-list-top {
+  margin-block: 10px;
+}
+.search-field {
+  background: #fafafa;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.search-field input {
+  height: 44px;
+  border: 0px;
+  background: #fafafa;
+  color: #425151;
+  font-size: 13px;
+}
+.search-field .input-group-append {
+  margin: 0px;
+  padding: 13px 12px;
+}
+.search-field input:focus {
+  box-shadow: none;
+}
+.accordion-item {
+  border: 0px;
+  background: transparent;
+}
+.accordion-body {
+  padding: 0rem;
+}
+.accordion-item .accordion-button {
   color: #90a3a7;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  padding: 0px;
+}
+.accordion-item .accordion-button:not(.collapsed) {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.accordion-button::after {
+  width: 1rem;
+  height: 1rem;
+  background-size: 1rem;
+}
+.accordion-button:not(.collapsed)::after {
+  width: 1rem;
+  height: 1rem;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-size: 1rem;
+}
+.client {
+  padding: 10px;
+  margin-block: 10px;
+  border-radius: 8px;
+  height: 56px;
+}
+.accordion-body .client:last-child {
+  background: #fafafa;
+}
+.client p {
+  color: #1a3a5f;
+  font-weight: 400;
+  font-size: 13px;
+}
+.client > p {
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.main-container .Journals {
+  height: calc(100vh - 105px);
+  overflow-y: auto;
+  border-right: 2px solid #fafafa;
+  border-left: 2px solid #fafafa;
+  padding: 0px;
+}
+.Journals-top {
+  background: #ffffff;
+  padding-inline: 10px;
+}
+.Journals select {
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 38px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  color: #425151;
+}
+.Journals select:focus {
+  box-shadow: none;
+}
+.accordion-list {
+  padding: 10px;
+}
+.accordion-list button.btn {
+  width: 100%;
+}
+.Journals .daily-journal:first-child {
+  background: #ffffff;
+  border: 1px solid #e9edea;
+}
+.Journals .daily-journal {
+  height: 60px;
+  padding: 10px;
+  margin-block: 10px;
+  border-radius: 8px;
+}
+.Journals .daily-journal h6 {
+  color: #1a3a5f;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.Journals .daily-journal p {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  color: #90a3a7;
+}
+
+.main-container .morning-journal {
+  background: #ffffff;
+  border-radius: 0px 12px 12px 0px;
+  height: calc(100vh - 105px);
+  overflow-y: auto;
+  padding: 0px;
+}
+.main-container .morning-journal {
+  font-family: "Mulish";
+}
+.morning-journal-top {
+  margin-block: 10px;
+  padding-inline: 10px;
+}
+.client-detail p.client-name {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0;
+  color: #1a3a5f;
+}
+.client-detail .user-card {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  height: 60px;
+  padding-inline: 10px;
+}
+.client-desc p {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+}
+.client-desc p span {
+  color: #90a3a7;
+  font-size: 10px;
+}
+.client-detail-content p {
+  padding-inline: 10px;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #425151;
+}
+
+/*---------journal-modal styles------------*/
+.journal-modal {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.journal-modal h6 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a3a5f;
+}
+.modal-card {
+  height: 140px;
+  border-radius: 16px;
+  position: relative;
+  padding: 15px;
+}
+.modal-card h6 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Nunito";
+  color: #1e5542;
+}
+.modal-card p {
+  margin: 0px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #1e5542;
+}
+.modal-card img {
+  transform: translate(15px, 14px);
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 648px !important;
+    height: 642px !important;
+  }
 }

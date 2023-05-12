@@ -341,3 +341,80 @@ button.btn:focus {
     height: 642px !important;
   }
 }
+
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./assets/images/login-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.login-form {
+  width: 551px;
+  height: 493px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14.5px);
+  padding: 3%;
+}
+.login-form h3 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.login-form > p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #a0a3a7;
+}
+.login-form label {
+  font-weight: 500;
+  color: #252525;
+  font-size: 16px;
+}
+.login-form input.form-control {
+  background: #ffffff;
+  border: 1px solid #cacaca;
+  border-radius: 8px;
+  height: 45px;
+}
+.login-form input.form-control:focus {
+  box-shadow: none;
+}
+.login-form a {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  color: #005e93;
+}
+.login-form p.orline {
+  font-family: sans-serif;
+  margin: 10px auto;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+}
+
+.login-form p.orline::before {
+  content: "";
+  display: block;
+  width: 45%;
+  height: 1px;
+  background: #a5aab1;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.login-form p.orline::after {
+  content: "";
+  display: block;
+  width: 45%;
+  height: 1px;
+  background: #a5aab1;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}

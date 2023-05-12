@@ -20,6 +20,7 @@ const JournalPage = () => {
           handleClose={handleClose}
           handleShow={handleShow}
           setSelectedClient={setSelectedClient}
+          selectedClient={selectedClient}
         />
         {/* Coll 2 */}
         <Journals

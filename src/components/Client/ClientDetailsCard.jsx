@@ -1,10 +1,6 @@
 import React from "react";
 
-const ClientDetailsCard = ({
-  client,
-
-  setSelectedClient,
-}) => {
+const ClientDetailsCard = ({ client, selectedClient, setSelectedClient }) => {
   return (
     <div
       className="d-flex justify-content-between align-items-center g-2 client"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ClientDetailsCard from "./ClientDetailsCard";
 
 const ClientAccordian = ({ id, data, header, setSelectedClient }) => {

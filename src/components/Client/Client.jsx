@@ -10,7 +10,13 @@ import {
   clientAccordianDetails2,
 } from "../../helpers/data";
 
-const Client = ({ openModal, handleClose, handleShow, setSelectedClient }) => {
+const Client = ({
+  openModal,
+  handleClose,
+  handleShow,
+  setSelectedClient,
+  selectedClient,
+}) => {
   return (
     <div className="col-md-3 client-list">
       <div className="client-list-top d-flex justify-content-between align-items-center">
@@ -29,6 +35,7 @@ const Client = ({ openModal, handleClose, handleShow, setSelectedClient }) => {
         header="Assigned By You"
         id="one"
         setSelectedClient={setSelectedClient}
+        selectedClient={selectedClient}
       />
       <ClientAccordian
         data={clientAccordianDetails2}

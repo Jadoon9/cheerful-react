@@ -1,21 +1,26 @@
 import React, { useEffect, useState } from "react";
 import NavbarItem from "./NavbarItem";
-import { RxDashboard } from "react-icons/rx";
 import { IoVideocam } from "react-icons/io5";
-import { BsFillPersonFill, BsTools, BsPersonFill } from "react-icons/bs";
-import { GrNotes } from "react-icons/gr";
+import {
+  BsFillPersonFill,
+  BsTools,
+  BsPersonFill,
+  BsFillFileEarmarkTextFill,
+  BsGridFill,
+} from "react-icons/bs";
+import { TbFileFilled } from "react-icons/tb";
 import { MdNotifications, MdEmail } from "react-icons/md";
 import userImage from "../../assets/images/Ellipse 326.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/cheer-logo.png";
 const navbarItems = [
-  { id: 1, name: "Dashboard", icon: <RxDashboard />, link: "/" },
+  { id: 1, name: "Dashboard", icon: <BsGridFill />, link: "/" },
   { id: 2, name: "Appointments", icon: <IoVideocam />, link: "/" },
   { id: 3, name: "Clients", icon: <BsFillPersonFill />, link: "/" },
-  { id: 4, name: "Assesments", icon: <GrNotes />, link: "/" },
+  { id: 4, name: "Assesments", icon: <BsFillFileEarmarkTextFill />, link: "/" },
   { id: 5, name: "Tools & Guides", icon: <BsTools />, link: "/" },
-  { id: 6, name: "Notes", icon: <GrNotes />, link: "/" },
-  { id: 7, name: "Journal", icon: <GrNotes />, link: "/" },
+  { id: 6, name: "Notes", icon: <TbFileFilled />, link: "/" },
+  { id: 7, name: "Journal", icon: <TbFileFilled />, link: "/" },
   { id: 7, name: "Login", icon: <BsPersonFill />, link: "/login" },
 ];
 

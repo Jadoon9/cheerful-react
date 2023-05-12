@@ -6,6 +6,7 @@ import Journals from "../components/Journals/Journals";
 const JournalPage = () => {
   const [openModal, setOpenModal] = useState(false);
   const [selectedClient, setSelectedClient] = useState(null);
+  const [selectedJournal, setSelectedJournal] = useState(null);
 
   const handleClose = () => setOpenModal(false);
   const handleShow = () => setOpenModal(true);
@@ -27,7 +28,8 @@ const JournalPage = () => {
           openModal={openModal}
           handleClose={handleClose}
           handleShow={handleShow}
-          setSelectedClient={setSelectedClient}
+          setSelectedJournal={setSelectedJournal}
+          selectedJournal={selectedJournal}
         />
         {/* Col 3 */}
 

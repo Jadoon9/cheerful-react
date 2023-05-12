@@ -182,9 +182,9 @@ button.btn:focus {
   border-radius: 8px;
   height: 56px;
 }
-.accordion-body .client:last-child {
+/* .accordion-body .client:last-child {
   background: #fafafa;
-}
+} */
 .client p {
   color: #1a3a5f;
   font-weight: 400;

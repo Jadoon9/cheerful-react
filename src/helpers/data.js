@@ -25,10 +25,19 @@ export const navbarItems = [
 export const clientAccordianDetails1 = [
   { id: 1, image: clientImage1, name: "Maurice Hilpert ", text: "Yet To View" },
   { id: 2, image: clientImage2, name: "Valerie Hickle ", text: "Viewed" },
-  { id: 2, image: clientImage2, name: "Brandi Fadel IV ", text: "Shared" },
+  { id: 3, image: clientImage2, name: "Brandi Fadel IV ", text: "Shared" },
 ];
 export const clientAccordianDetails2 = [
-  { id: 1, image: clientImage1, name: "Maurice Hilpert " },
-  { id: 2, image: clientImage2, name: "Valerie Hickle " },
-  { id: 2, image: clientImage2, name: "Brandi Fadel IV " },
+  { id: 4, image: clientImage1, name: "Maurice Hilpert " },
+  { id: 5, image: clientImage2, name: "Valerie Hickle " },
+  { id: 6, image: clientImage2, name: "Brandi Fadel IV " },
+];
+
+export const journalAccordianDetails = [
+  { id: 7, title: "Online Consultation", text: "6 July 2022 @ 3:00 PM" },
+  { id: 8, title: "Online Consultation", text: "6 July 2022 @ 3:00 PM" },
+];
+export const journalAccordianDetails1 = [
+  { id: 9, title: "Entry - 01", text: "6 July 2022 @ 3:00 PM" },
+  { id: 10, title: "Entry - 01", text: "6 July 2022 @ 3:00 PM" },
 ];

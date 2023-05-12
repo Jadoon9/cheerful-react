@@ -1,7 +1,13 @@
 import React from "react";
 import JournalsCard from "../Journals/JournalsCard";
 
-const Accordian = ({ id, header, cardTitle, cardTitle2 }) => {
+const Accordian = ({
+  data,
+  id,
+  header,
+  setSelectedJournal,
+  selectedJournal,
+}) => {
   return (
     <div className="mb-3">
       <div class="accordion" id="accordionExample">
@@ -25,8 +31,15 @@ const Accordian = ({ id, header, cardTitle, cardTitle2 }) => {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <JournalsCard cardTitle={cardTitle} />
-              <JournalsCard cardTitle={cardTitle2} />
+              {data?.map((item) => {
+                return (
+                  <JournalsCard
+                    data={item}
+                    setSelectedJournal={setSelectedJournal}
+                    selectedJournal={selectedJournal}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>

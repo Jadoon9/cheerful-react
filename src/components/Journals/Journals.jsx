@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Accordian from "../Common/Accordian";
 import Button from "../Common/Button";
 import Modall from "../Common/Modal";
+import {
+  journalAccordianDetails,
+  journalAccordianDetails1,
+} from "../../helpers/data";
 
-const Journals = ({ openModal, handleClose, handleShow }) => {
+const Journals = ({
+  selectedJournal,
+  setSelectedJournal,
+  openModal,
+  handleClose,
+  handleShow,
+}) => {
   return (
     <div className="col-md-3 Journals">
       <div className="Journals-top py-2">
@@ -17,16 +27,16 @@ const Journals = ({ openModal, handleClose, handleShow }) => {
       </div>
       <div className="accordion-list">
         <Accordian
+          data={journalAccordianDetails}
+          setSelectedJournal={setSelectedJournal}
+          selectedJournal={selectedJournal}
           header="Daily Journal"
-          cardTitle="Online Consultation"
-          cardTitle2="Online Consultation"
-          id="three"
         />
         <Accordian
-          header="Grif Journal"
-          cardTitle="Entry - 01"
-          cardTitle2="Entry - 02"
-          id="four"
+          data={journalAccordianDetails1}
+          setSelectedJournal={setSelectedJournal}
+          selectedJournal={selectedJournal}
+          header="Grief Journal"
         />
       </div>
       <Modall openModal={openModal} handleClose={handleClose} />

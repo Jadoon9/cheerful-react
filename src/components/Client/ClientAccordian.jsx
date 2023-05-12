@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import ClientDetailsCard from "./ClientDetailsCard";
 
-const ClientAccordian = ({ id, data, header, setSelectedClient }) => {
+const ClientAccordian = ({
+  id,
+  data,
+  header,
+  setSelectedClient,
+  selectedClient,
+}) => {
+  console.log(id, "dasd");
   return (
     <div className="mb-3">
       <div class="accordion" id="accordionExample">
@@ -30,6 +37,7 @@ const ClientAccordian = ({ id, data, header, setSelectedClient }) => {
                   <ClientDetailsCard
                     client={item}
                     setSelectedClient={setSelectedClient}
+                    selectedClient={selectedClient}
                   />
                 );
               })}

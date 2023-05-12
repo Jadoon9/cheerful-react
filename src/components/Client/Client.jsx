@@ -42,6 +42,7 @@ const Client = ({
         header="Shared With You"
         id="two"
         setSelectedClient={setSelectedClient}
+        selectedClient={selectedClient}
       />
       <Modall openModal={openModal} handleClose={handleClose} />
     </div>

@@ -31,13 +31,12 @@ button.btn:focus {
 .carrot-left {
   width: 36px;
   height: 36px;
-
   background: #fafafa;
   border-radius: 8px;
 }
 .header {
   padding-block: 5px;
-  height: 74px;
+  min-height: 74px;
   background: #fcfcfc;
 }
 .header .navbar-expand-sm .navbar-nav {
@@ -50,6 +49,9 @@ button.btn:focus {
   font-size: 13px;
   line-height: 20px;
   color: #afb1b0;
+}
+.header svg {
+  font-size: 18px;
 }
 .header .nav-item .nav-link p {
   margin: 0px;
@@ -94,7 +96,8 @@ button.btn:focus {
   overflow-y: auto;
   background: #f6f6f6;
 }
-.client-list::-webkit-scrollbar {
+.client-list::-webkit-scrollbar,
+.Journals::-webkit-scrollbar {
   width: 0px;
 }
 .main-container h5 {
@@ -126,12 +129,22 @@ button.btn:focus {
   color: #425151;
   font-size: 13px;
 }
+.search-field input:focus {
+  background: #fafafa !important;
+}
 .search-field .input-group-append {
   margin: 0px;
   padding: 13px 12px;
 }
 .search-field input:focus {
   box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+.accordion-button.collapsed {
+  background: transparent;
 }
 .accordion-item {
   border: 0px;
@@ -183,11 +196,16 @@ button.btn:focus {
 }
 
 .main-container .Journals {
+  display: flex;
+  flex-direction: column;
   height: calc(100vh - 105px);
   overflow-y: auto;
   border-right: 2px solid #fafafa;
   border-left: 2px solid #fafafa;
   padding: 0px;
+}
+.main-container .Journals button.btn {
+  width: 100%;
 }
 .Journals-top {
   background: #ffffff;
@@ -206,10 +224,8 @@ button.btn:focus {
   box-shadow: none;
 }
 .accordion-list {
+  position: relative;
   padding: 10px;
-}
-.accordion-list button.btn {
-  width: 100%;
 }
 .Journals .daily-journal:first-child {
   background: #ffffff;

@@ -2,21 +2,13 @@ import React from "react";
 import Button from "../Common/Button";
 import InputField from "../Common/InputField";
 import { BsSearch } from "react-icons/bs";
-import clientImage1 from "../..//assets/images/Ellipse 352.png";
-import clientImage2 from "../../assets/images/Ellipse 352 2.png";
+
 import ClientAccordian from "./ClientAccordian";
 import Modall from "../Common/Modal";
-
-const clientAccordianDetails1 = [
-  { id: 1, image: clientImage1, name: "Maurice Hilpert ", text: "Yet To View" },
-  { id: 2, image: clientImage2, name: "Valerie Hickle ", text: "Viewed" },
-  { id: 2, image: clientImage2, name: "Brandi Fadel IV ", text: "Shared" },
-];
-const clientAccordianDetails2 = [
-  { id: 1, image: clientImage1, name: "Maurice Hilpert " },
-  { id: 2, image: clientImage2, name: "Valerie Hickle " },
-  { id: 2, image: clientImage2, name: "Brandi Fadel IV " },
-];
+import {
+  clientAccordianDetails1,
+  clientAccordianDetails2,
+} from "../../helpers/data";
 
 const Client = ({ openModal, handleClose, handleShow, setSelectedClient }) => {
   return (

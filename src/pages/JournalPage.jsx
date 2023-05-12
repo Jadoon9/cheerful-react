@@ -6,6 +6,7 @@ import Journals from "../components/Journals/Journals";
 const JournalPage = () => {
   const [openModal, setOpenModal] = useState(false);
   const [selectedClient, setSelectedClient] = useState(null);
+
   const handleClose = () => setOpenModal(false);
   const handleShow = () => setOpenModal(true);
 

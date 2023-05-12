@@ -1,18 +1,16 @@
 import React from "react";
-import Button from "../components/Common/Button";
+import Button from "./Common/Button";
 import { useNavigate } from "react-router-dom";
 
-const Login = ({ setIsLoggedIn }) => {
+const NotFound = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <h1>Login</h1>
+      <h1>No page found for this path</h1>
       <Button
-        text="Login"
+        text="Go Back"
         onClick={() => {
-          setIsLoggedIn(true);
-          localStorage.setItem("isLoggedIn", true);
-          navigate("/journal");
+          navigate(-1);
         }}
         type="button"
         bgcolor="#1A3A5F"
@@ -22,4 +20,4 @@ const Login = ({ setIsLoggedIn }) => {
   );
 };
 
-export default Login;
+export default NotFound;

@@ -6,47 +6,48 @@ import InputField from "./InputField";
 import { BsSearch } from "react-icons/bs";
 import ModalCard from "./ModalCard";
 import { ModalBody } from "react-bootstrap";
+import testimage from "../../assets/images/Ellipse 326.png";
 
 const modalCardData = [
   {
     id: 1,
     title: "Reflective",
-    image: "",
+    image: testimage,
     text: "Find meaning and purpose daily",
     color: "#EEEEEE",
   },
   {
     id: 2,
     title: "Goals",
-    image: "",
+    image: testimage,
     text: "Identify your goals and objectives",
     color: "#FBE5A7",
   },
   {
     id: 3,
     title: "Goals",
-    image: "",
+    image: testimage,
     text: "Identify your goals and objectives",
     color: "#DCF5C4",
   },
   {
     id: 4,
     title: "Reflective",
-    image: "",
+    image: testimage,
     text: "Find meaning and purpose daily",
     color: "#FBE5A7",
   },
   {
     id: 5,
     title: "Reflective",
-    image: "",
+    image: testimage,
     text: "Find meaning and purpose daily",
     color: "#EEEEEE",
   },
   {
     id: 5,
     title: "Goals",
-    image: "",
+    image: testimage,
     text: "Identify your goals and objectives",
     color: "#DCF5C4",
   },
@@ -73,6 +74,7 @@ function Modall({ openModal, handleClose }) {
                     title={item.title}
                     text={item.text}
                     color={item.color}
+                    image={item.image}
                   />
                 </div>
               );

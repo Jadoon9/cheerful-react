@@ -1,15 +1,7 @@
 import React from "react";
-import JournalsCard from "../Journals/JournalsCard";
 import ClientDetailsCard from "./ClientDetailsCard";
 
-const ClientAccordian = ({
-  id,
-  data,
-  header,
-  cardTitle,
-  cardTitle2,
-  setSelectedClient,
-}) => {
+const ClientAccordian = ({ id, data, header, setSelectedClient }) => {
   return (
     <div>
       <div class="accordion" id="accordionExample">
@@ -21,7 +13,7 @@ const ClientAccordian = ({
               data-bs-toggle="collapse"
               data-bs-target={`#${id}`}
               aria-expanded="true"
-              aria-controls="collapseOne"
+              // aria-controls="collapseOne"
             >
               <p className="accordian_title_color"> {header}</p>
             </button>

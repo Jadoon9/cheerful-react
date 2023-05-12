@@ -6,48 +6,50 @@ import InputField from "./InputField";
 import { BsSearch } from "react-icons/bs";
 import ModalCard from "./ModalCard";
 import { ModalBody } from "react-bootstrap";
-import testimage from "../../assets/images/Ellipse 326.png";
+import Image1 from "../../assets/images/Reflective.png";
+import Image2 from "../../assets/images/Goal.png";
+import Image3 from "../../assets/images/Reflective2.png";
 
 const modalCardData = [
   {
     id: 1,
     title: "Reflective",
-    image: testimage,
+    image: Image3,
     text: "Find meaning and purpose daily",
     color: "#EEEEEE",
   },
   {
     id: 2,
     title: "Goals",
-    image: testimage,
+    image: Image1,
     text: "Identify your goals and objectives",
     color: "#FBE5A7",
   },
   {
     id: 3,
     title: "Goals",
-    image: testimage,
+    image: Image1,
     text: "Identify your goals and objectives",
     color: "#DCF5C4",
   },
   {
     id: 4,
     title: "Reflective",
-    image: testimage,
+    image: Image2,
     text: "Find meaning and purpose daily",
     color: "#FBE5A7",
   },
   {
     id: 5,
     title: "Reflective",
-    image: testimage,
+    image: Image3,
     text: "Find meaning and purpose daily",
     color: "#EEEEEE",
   },
   {
     id: 5,
     title: "Goals",
-    image: testimage,
+    image: Image1,
     text: "Identify your goals and objectives",
     color: "#DCF5C4",
   },
@@ -56,8 +58,12 @@ const modalCardData = [
 function Modall({ openModal, handleClose }) {
   return (
     <>
-      <Modal show={openModal} onHide={handleClose}>
-        <Modal.Body style={{ width: "648px", height: "624px" }}>
+      <Modal
+        show={openModal}
+        onHide={handleClose}
+        className="journal-modal modal-md"
+      >
+        <Modal.Body>
           <div className="d-flex align-items-center justify-content-between">
             <h6>Assign Journal</h6>
             <div onClick={handleClose}>

@@ -4,7 +4,7 @@ const NavbarItem = ({ data, activeTab, onClick }) => {
   return (
     <li className="nav-item" onClick={onClick}>
       <div
-        className="d-flex flex-column align-items-center justify-content-center "
+        className="nav-link d-flex flex-column align-items-center justify-content-center "
         style={{
           color: `${activeTab?.id === data.id ? "#F4A417" : "#C7C7C7"}`,
         }}

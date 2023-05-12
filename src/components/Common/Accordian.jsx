@@ -3,7 +3,7 @@ import JournalsCard from "../Journals/JournalsCard";
 
 const Accordian = ({ id, header, cardTitle, cardTitle2 }) => {
   return (
-    <div>
+    <div className="mb-3">
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -15,7 +15,7 @@ const Accordian = ({ id, header, cardTitle, cardTitle2 }) => {
               aria-expanded="true"
               // aria-controls="collapseOne"
             >
-              <p className="accordian_title_color"> {header}</p>
+              <p className="accordian_title_color m-0"> {header}</p>
             </button>
           </h2>
           <div

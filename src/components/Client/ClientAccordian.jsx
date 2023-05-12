@@ -3,7 +3,7 @@ import ClientDetailsCard from "./ClientDetailsCard";
 
 const ClientAccordian = ({ id, data, header, setSelectedClient }) => {
   return (
-    <div>
+    <div className="mb-3">
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -15,7 +15,7 @@ const ClientAccordian = ({ id, data, header, setSelectedClient }) => {
               aria-expanded="true"
               // aria-controls="collapseOne"
             >
-              <p className="accordian_title_color"> {header}</p>
+              <p className="accordian_title_color m-0"> {header}</p>
             </button>
           </h2>
           <div
@@ -27,12 +27,10 @@ const ClientAccordian = ({ id, data, header, setSelectedClient }) => {
             <div class="accordion-body">
               {data?.map((item) => {
                 return (
-                  <div className="my-4">
-                    <ClientDetailsCard
-                      client={item}
-                      setSelectedClient={setSelectedClient}
-                    />
-                  </div>
+                  <ClientDetailsCard
+                    client={item}
+                    setSelectedClient={setSelectedClient}
+                  />
                 );
               })}
             </div>

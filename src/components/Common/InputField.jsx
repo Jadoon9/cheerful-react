@@ -2,7 +2,7 @@ import React from "react";
 
 const InputField = ({ placeHolder, icon: Icon, iconStart: Iconn }) => {
   return (
-    <div>
+    <div className="search-field">
       <div class="input-group mb-3">
         {Iconn && <div class="input-group-append">{<Iconn />}</div>}
         <input

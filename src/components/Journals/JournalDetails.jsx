@@ -6,15 +6,15 @@ import clientImage1 from "../..//assets/images/Ellipse 352.png";
 
 const JournalDetails = () => {
   return (
-    <div className="col-md-6 morning-journal">
-      <div className="d-flex justify-content-between align-items-center morning-journal-top">
+    <div className="col-md-4 col-lg-6 morning-journal">
+      <div className="d-flex justify-content-between align-items-center flex-wrap morning-journal-top">
         <div className="d-flex gap-2 align-items-center">
           <div className="p-1 d-flex align-items-center justify-content-center carrot-left">
             <MdArrowBackIos />
           </div>
           <h5>Morning Journal Entry</h5>
         </div>
-        <div className="d-flex gap-2">
+        <div className="d-flex gap-2 button-group">
           <Button text="Message" bgcolor="#F3F8F4" color="#1E5542" />
           <Button text="Schedule a Session" bgcolor="#1A3A5F" color="white" />
         </div>

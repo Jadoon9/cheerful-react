@@ -60,6 +60,9 @@ button.btn:focus {
   color: #afb1b0;
   gap: 20px;
 }
+.header .nav-right > * {
+  margin-left: 15px;
+}
 .header .nav-right .btn-group {
   width: 80px;
   height: 42px;
@@ -138,6 +141,9 @@ button.btn:focus {
 }
 .search-field input:focus {
   box-shadow: none;
+}
+.nav-item {
+  margin-inline: 20px;
 }
 .accordion-button:focus {
   box-shadow: none;
@@ -417,4 +423,41 @@ button.btn:focus {
   right: 0;
   top: 50%;
   position: absolute;
+}
+@media only screen and (max-width: 991px) {
+  nav .nav-item {
+    margin-inline: 10px;
+  }
+  .header .nav-item .nav-link {
+    gap: 5px;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+  }
+  .header .navbar {
+    position: relative;
+  }
+  .header .nav-right {
+    position: absolute;
+    color: #afb1b0;
+    gap: 20px;
+    top: 0;
+    right: 15%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-container .client-list,
+  .main-container .Journals,
+  .main-container .morning-journal {
+    height: max-content;
+    margin-bottom: 20px;
+  }
+  .morning-journal-top .button-group {
+    width: 100%;
+    justify-content: space-between;
+    margin-block: 15px;
+  }
+  .modal-items {
+    max-height: calc(100vh - 133px);
+    overflow: scroll;
+  }
 }

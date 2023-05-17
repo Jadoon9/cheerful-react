@@ -20,7 +20,7 @@ const Navbar = ({ setIsLoggedIn }) => {
 
   return (
     <div className="header">
-      <nav class="navbar navbar-expand-sm">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <div class="navbar-brand" onClick={() => navigate("/journal")}>
             <img src={logo} alt="logo" />
@@ -51,7 +51,7 @@ const Navbar = ({ setIsLoggedIn }) => {
                 );
               })}
             </ul>
-            <div class="d-flex align-items-center my-2 my-lg-0 nav-right">
+            <div class="my-2 d-none d-lg-block nav-right">
               <MdNotifications />
               <MdEmail />
               <div class="btn-group">
@@ -80,6 +80,36 @@ const Navbar = ({ setIsLoggedIn }) => {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+          <div class="my-2 d-lg-none nav-right">
+            <MdNotifications />
+            <MdEmail />
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="true"
+              >
+                <img src={userImage} alt="" />
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button
+                    style={{ color: "red" }}
+                    class="dropdown-item"
+                    type="button"
+                    onClick={() => {
+                      setIsLoggedIn(false);
+                      localStorage.clear();
+                      navigate("/login");
+                    }}
+                  >
+                    Logout
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

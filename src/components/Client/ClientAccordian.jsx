@@ -8,7 +8,6 @@ const ClientAccordian = ({
   setSelectedClient,
   selectedClient,
 }) => {
-  console.log(id, "dasd");
   return (
     <div className="mb-3">
       <div class="accordion" id="accordionExample">

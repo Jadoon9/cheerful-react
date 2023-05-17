@@ -15,7 +15,7 @@ const Journals = ({
   handleShow,
 }) => {
   return (
-    <div className="col-md-3 Journals">
+    <div className="col-md-4 col-lg-3 Journals">
       <div className="Journals-top py-2">
         <h5 className="mb-2">Journals</h5>
         <select class="form-select form-select-lg" name="" id="">

@@ -18,7 +18,7 @@ const Client = ({
   selectedClient,
 }) => {
   return (
-    <div className="col-md-3 client-list">
+    <div className="col-md-4 col-lg-3 client-list">
       <div className="client-list-top d-flex justify-content-between align-items-center">
         <h5 className="m-0">Client List</h5>
         <Button
@@ -33,7 +33,7 @@ const Client = ({
       <ClientAccordian
         data={clientAccordianDetails1}
         header="Assigned By You"
-        id="one"
+        id="onee1"
         setSelectedClient={setSelectedClient}
         selectedClient={selectedClient}
       />

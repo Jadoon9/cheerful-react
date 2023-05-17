@@ -72,7 +72,7 @@ function Modall({ openModal, handleClose }) {
           </div>
           <InputField iconStart={BsSearch} />
 
-          <div className="row">
+          <div className="row modal-items">
             {modalCardData.map((item) => {
               return (
                 <div className="col-md-6 g-3">

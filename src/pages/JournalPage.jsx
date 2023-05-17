@@ -7,6 +7,8 @@ const JournalPage = () => {
   const [openModal, setOpenModal] = useState(false);
   const [selectedClient, setSelectedClient] = useState(null);
   const [selectedJournal, setSelectedJournal] = useState(null);
+  const [accordian1, setAccordian1] = useState(false);
+  const [accordian2, setAccordian2] = useState(false);
 
   const handleClose = () => setOpenModal(false);
   const handleShow = () => setOpenModal(true);

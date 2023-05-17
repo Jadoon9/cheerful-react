@@ -228,8 +228,8 @@ button.btn:focus {
   padding: 10px;
 }
 .Journals .daily-journal:first-child {
-  background: #ffffff;
-  border: 1px solid #e9edea;
+  /* background: #ffffff;
+  border: 1px solid #e9edea; */
 }
 .Journals .daily-journal {
   height: 60px;

@@ -9,7 +9,7 @@ const JournalsCard = ({ data, setSelectedJournal, selectedJournal }) => {
     } else {
       setActiveJournal(false);
     }
-  }, [activeJournal]);
+  }, [activeJournal, selectedJournal]);
 
   return (
     <div

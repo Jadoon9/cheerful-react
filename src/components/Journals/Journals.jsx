@@ -31,12 +31,14 @@ const Journals = ({
           setSelectedJournal={setSelectedJournal}
           selectedJournal={selectedJournal}
           header="Daily Journal"
+          id="three"
         />
         <Accordian
           data={journalAccordianDetails1}
           setSelectedJournal={setSelectedJournal}
           selectedJournal={selectedJournal}
           header="Grief Journal"
+          id="four"
         />
       </div>
       <Modall openModal={openModal} handleClose={handleClose} />

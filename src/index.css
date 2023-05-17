@@ -424,6 +424,7 @@ button.btn:focus {
   top: 50%;
   position: absolute;
 }
+
 @media only screen and (max-width: 991px) {
   nav .nav-item {
     margin-inline: 10px;
@@ -441,7 +442,7 @@ button.btn:focus {
     color: #afb1b0;
     gap: 20px;
     top: 0;
-    right: 15%;
+    right: 80px;
   }
 }
 @media only screen and (max-width: 767px) {
